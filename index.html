@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+        content="RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nerfies: Deformable Neural Radiance Fields</title>
@@ -42,85 +42,140 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav>
-
-
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+              <a href="https://geng-haoran.github.io/">Haoran Geng</a><sup>1*</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+              <a href="https://fisher-wang.github.io/">Feishi Wang</a><sup>1,2,3*</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
+              <a href="https://songlin.github.io/">Songlin Wei</a><sup>2*</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
+              <a href="https://yuyangli.com/">Yuyang Li</a><sup>2*</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
+              <a href="https://www.bangjunwang.com/">Bangjun Wang</a><sup>3*</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
+              <a href="https://boshi-an.github.io/">Boshi An</a><sup>2*</sup>,
             </span>
             <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              Charlie Tianyue Cheng<sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=BIPK9KEAAAAJ">Haozhe Lou</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/peihao-li-555660225/">Peihao Li</a><sup>1,4</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://wangyenjen.github.io/">Yen-Jen Wang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.lyt0112.com/">Yutong Liang</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=JF9J8uUAAAAJ">Dylan Goetting</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://co1one.github.io/">Chaoyi Xu</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://blog.chenhaozhe.top/">Haozhe Chen</a><sup>5</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=KmGNBSMAAAAJ">Yuxi Qian</a><sup>6</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://gengyiran.github.io/">Yiran Geng</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://pointscoder.github.io/">Jiageng Mao</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://robo-alex.github.io/">Mingtong Zhang</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://jiangranlv.github.io/">Jiangran Lyu</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://sihengz02.github.io/">Siheng Zhao</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://jzhzhang.github.io/">Jiazhao Zhang</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://mzhmxzh.github.io/">Jialiang Zhang</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://chengyzhao.github.io/">Chengyang Zhao</a><sup>7</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://luhr2003.github.io/">Haoran Lu</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://selina2023.github.io/">Yufei Ding</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://nikepupu.github.io/">Ran Gong</a><sup>8</sup>,
+            </span>
+            <span class="author-block">
+              Yuran Wang<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://yuxuank.com/">Yuxuan Kuang</a><sup>2,3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://warshallrho.github.io/">Ruihai Wu</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://buzz-beater.github.io/">Baoxiong Jia</a><sup>8</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://sferrazza.cc/">Carlo Sferrazza</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://zsdonghao.github.io/">Hao Dong</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://siyuanhuang.com/">Siyuan Huang</a><sup>9</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://me.berkeley.edu/people/koushil-sreenath/">Koushil Sreenath</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://yuewang.xyz/">Yue Wang</a><sup>3†</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://people.eecs.berkeley.edu/~malik/">Jitendra Malik</a><sup>1†</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a><sup>1†</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>UC Berkeley,</span>
+            <span class="author-block"><sup>2</sup>PKU,</span>
+            <span class="author-block"><sup>3</sup>USC,</span>
+            <span class="author-block"><sup>4</sup>UMich,</span>
+            <span class="author-block"><sup>5</sup>UIUC,</span>
+            <span class="author-block"><sup>6</sup>Stanford,</span>
+            <span class="author-block"><sup>7</sup>CMU,</span>
+            <span class="author-block"><sup>8</sup>BIGAI</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href="static/pdfs/paper_supp_20250405_1820.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -128,7 +183,7 @@
                   <span>Paper</span>
                 </a>
               </span>
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://arxiv.org/abs/2011.12948"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -136,7 +191,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Video Link. -->
               <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
